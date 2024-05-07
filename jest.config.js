@@ -2,6 +2,10 @@ module.exports = {
   collectCoverage: false,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
+    '!<rootDir>/src/application/interfaces/**/*',
+    '!<rootDir>/src/infra/factories/**/*',
+    '!<rootDir>/src/infra/shared/config/**/*',
+    '!<rootDir>/src/infra/http/**/*',
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'babel',
